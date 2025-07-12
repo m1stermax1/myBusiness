@@ -85,7 +85,7 @@ export function RegisterForm() {
           router.push("/dashboard")
         }, 2000)
       }
-    } catch (err) {
+    } catch {
       setError("Error inesperado. Intenta nuevamente.")
     } finally {
       setLoading(false)

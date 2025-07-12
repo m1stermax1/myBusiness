@@ -40,7 +40,7 @@ export function LoginForm() {
         router.push("/dashboard")
         router.refresh()
       }
-    } catch (err) {
+    } catch {
       setError("Error inesperado. Intenta nuevamente.")
     } finally {
       setLoading(false)

@@ -57,8 +57,17 @@ const menuItems = [
   },
 ]
 
+interface UserMetadata {
+  full_name?: string
+}
+
+interface User {
+  email?: string
+  user_metadata?: UserMetadata
+}
+
 interface AppSidebarProps {
-  user: any
+  user: User
 }
 
 export function AppSidebar({ user }: AppSidebarProps) {
